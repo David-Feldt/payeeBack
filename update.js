@@ -14,9 +14,9 @@ export const main = handler(async (event, context) => {
     },
     // 'UpdateExpression' defines the attributes to be updated
     // 'ExpressionAttributeValues' defines the value in the update expression
-    UpdateExpression: "SET content = :content, attachment = :attachment",
+    UpdateExpression: "SET content = :content, payeeName = :payeeName",
     ExpressionAttributeValues: {
-      ":attachment": data.attachment || null,
+      ":payeeName": data.payeeName || null,
       ":content": data.content || null
     },
     // 'ReturnValues' specifies if and how to return the item's attributes,
